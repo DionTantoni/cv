@@ -1,0 +1,167 @@
+<!--
+Below is the typical boiler type of HTML.
+We create them by simply typing HTML then enter because we have installed
+extensions from emmet. To find more emmet shortcuts, we can go to:
+https://docs.emmet.io/cheat-sheet/
+
+-->
+<!DOCTYPE html>               <!-- this is where we declare the document type and version for the browser to render-->
+<html lang="en" dir="ltr">    <!-- this is opening tag that tells the browser that everything in between these tags are html code -->
+  <head>                      <!-- this is the head of the html code that holds information about the webpage and tells the browser how it should handle the page -->
+    <meta charset="utf-8">    <!-- this meta element is in the head section which give meta data (associated data) . More explanation below-->
+    <title> Dion Personal Site</title>
+  </head>
+  <body>                      <!-- the body section is what give our website its content -->
+    <table cellspacing="20">
+      <tr>
+        <td><img src="images/20210523_UNSW_Engineering_SCREEN-104.jpg" alt="Dion Tantoni profile picture" height="210"></td>
+        <td>
+          <h1> Dion Tantoni </h1>   <!-- heading level 1 -->
+            <p>                       <!-- this is the paragraph elemet for us to write -->
+              <em>Renewable Energy Engineer from <strong> <a href="https://www.unsw.edu.au/">UNSW</a></strong> .</em>
+            </p>
+            <p>
+          Enter a little bit of bio here
+            </p>
+        </td>
+      </tr>
+    </table>
+    <hr />                    <!-- horizontal rule to create a line on the webpage-->
+    <h3> Education background </h3>
+    <ul>
+      <li> Renewable Energy Engineering from UNSW </li>
+      <li> St. Aloysius High School </li>
+    </ul>
+    <hr>
+    <h3>Work Experience</h3>
+    <table cellspacing="10">    <!-- creating a table to format the appearance of the HTML. Without it, the year and description will not have the same indendtation -->
+      <thead>  <!-- this is the head or the title of our table for each column. It is by default bolded -->
+        <tr>
+          <th>Dates</th>              <!-- this is the element of our first column- -->
+          <th>Work Description</th>  <!-- this is the element of our second column-->
+        </tr>
+      </thead>
+      <tbody>  <!-- this is the body, the actual content of our table -->
+        <tr>
+          <td>2017 - present</td>
+          <td>Student Ambassador at UNSW Maker Space</td>
+        </tr>
+        <tr>
+          <td>Nov 2020 - Mar 2021</td>
+          <td>Laboratory assistant - internship at UNSW</td>
+        </tr>
+        <tr>
+          <td>Dec 2020 - Feb 2021</td>
+          <td>Solar panel installer - internship at Sun Star Electrical</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    <h3>Skills</h3>
+    <table cellspacing="10">
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>Microsoft Office</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>AutoCAD</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Fusion360</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Rhinoceros</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>KiCAD</td>
+              <td>⭐⭐</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>EasyEDA</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Micro-Cap</td>
+              <td>⭐⭐</td>
+            </tr>
+            <tr>
+              <td>SAM</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Helioscope</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>⭐⭐</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+
+    <hr>
+    <a href="MyHobbies.html">My Hobbies</a>
+    <br>
+    <a href="contactDetail.html">Contact me!</a>
+  </body>
+</html>
+
+<!-- META
+The meta element from line 11 has character set that give associated data to the
+browser about our code. charset="utf-8" tells the browser that all the code Below
+are encoded with the utf-8 encoding system. This encoder translates what we type
+to how it shows in browser. It is particularly importatnt to use the correct encoder
+if we are visiting sites with lots of special character, like japanese website
+for example. Changing the encoder to something else will ruin all the characters
+and make the whole page meaningless.
+
+utf-8 is the standard we have to use because it includes all the international
+symbols and everything which are listed in the unicode character table and it
+even include emojis. Here is their website: https://unicode-table.com/en/
+
+Meta tags have more attributes than charset. All tells the borwser how it should
+display the webpage and gives information about the content of the website.
+ -->
+
+<!-- Italicize in html.
+When we want to make itallic text, we can use the element <i> </i> or <em> </em>
+both visually does the same thing. However, i is simply change the text appearance,
+whereas em put emphosise to it, showing the significance of the text we put in
+itallic. Therefore, it is highly recommended that we use em instead of i! Similary
+if we want to bold our text we can use the element <b> </b> or <strong> </strong>
+The element strong is recommended over b for similar reason.
+-->
+
+<!-- HTML list
+To make a list, we can use unordered list element as shown:
+<ul>
+  <li>first item</li>
+  <li>second item</li>
+  <li>third item</li>
+</ul>
+
+Ordered list is something like 1,2,3 or a,b,c ; not as simple as bullet points.
+For using ordered list, we use the element as shown:
+<ol>
+  <li>Fee</li>
+  <li>Fi</li>
+  <li>Fo</li>
+  <li>Fum</li>
+</ol>
+
+Note that on both elements, the attributes can be added. Search on mdn for more
+details about their attributes.
+-->
